@@ -29,7 +29,7 @@
         android:layout_height="90dp"
         android:layout_marginStart="56dp"
         android:layout_marginBottom="68dp"
-        android:text="register"
+        android:text="הרשם"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -40,7 +40,7 @@
         android:layout_height="90dp"
         android:layout_marginEnd="56dp"
         android:layout_marginBottom="72dp"
-        android:text="conect"
+        android:text="התחבר"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
