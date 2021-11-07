@@ -1,11 +1,15 @@
 package com.e.learningenglish;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 Button btn;
@@ -20,12 +24,28 @@ Dialog loginDialog;
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        return  true;
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+         super.onOptionsItemSelected(item);
+         int id=item.getItemId();
+
+         return true;
+    }
+
+    @Override
     public void onClick(View v) {
         if (btn==v)
         {
             loginDialog=new Dialog(this);
-            loginDialog.setContentView(R.layout.activity_register);
+            loginDialog.setContentView(R.layout.dialog_register);
             loginDialog.show();
         }
     }
 }
+
