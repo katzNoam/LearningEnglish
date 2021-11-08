@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
 
-        android:id="@+id/action_login"
-        android:title="Login"
+        android:id="@+id/menuitem_words"
         android:orderInCategory="100"
-        android:showAsAction="never"
+        app:showAsAction="never"
+        android:title="מילים שנלמדו"
 
         />
+    <item
+        android:id="@+id/menuitem_tests"
+        android:title="מבדקים" >
+
+    </item>
+
+        <menu>
+            <item
+                android:id="@+id/menuitem_american"
+                android:title="מבחן אמריקאי"/>
+
+            <item
+                android:id="@+id/menuitem_setence"
+                android:title="השלמת משפטים"
+                />
+        </menu>
+
+    <item
+        android:id="@+id/menuitems_learn"
+        android:title="למידת מילים חדשות" />
 </menu>
