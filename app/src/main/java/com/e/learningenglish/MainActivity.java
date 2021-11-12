@@ -22,14 +22,15 @@ Button connect;
         setContentView(R.layout.activity_main);
         register=findViewById(R.id.button);
         register.setOnClickListener(this);
-        connect=findViewById(R.id.button0);
+        connect=(Button)findViewById(R.id.button0);
         connect.setOnClickListener(this);
     }
 
 
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View v)
+    {
         if (register==v)
         {
             register_dialog =new Dialog(this);
