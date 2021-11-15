@@ -27,7 +27,6 @@ public class OpeningActivity extends AppCompatActivity implements View.OnClickLi
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opening);
-        learn=findViewById(R.id.menuitem_learn);
         hello=findViewById(R.id.hello);
         Intent intent=getIntent();
         String hello2 = intent.getExtras().getString("hello2");
@@ -38,6 +37,11 @@ public class OpeningActivity extends AppCompatActivity implements View.OnClickLi
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         super.onOptionsItemSelected(item);
         int id=item.getItemId();
+        if(id==R.id.menuitem_learn)
+        {
+            Intent intent=new Intent(this,LearningActivity.class);
+            startActivity(intent);
+        }
 
         return true;
     }
@@ -45,10 +49,6 @@ public class OpeningActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View v)
     {
-        if(learn==v)
-        {
-            Intent intent=new Intent(this,LearningActivity.class);
-            startActivity(intent);
-        }
+
     }
 }
