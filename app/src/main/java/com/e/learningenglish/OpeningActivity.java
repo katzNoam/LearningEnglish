@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class OpeningActivity extends AppCompatActivity implements View.OnClickListener
 {
     TextView hello;
-    MenuItem learn;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -40,6 +39,16 @@ public class OpeningActivity extends AppCompatActivity implements View.OnClickLi
         if(id==R.id.menuitem_learn)
         {
             Intent intent=new Intent(this,LearningActivity.class);
+            startActivity(intent);
+        }
+        else if(id==R.id.menuitem_american)
+        {
+            Intent intent=new Intent(this,AmericanTestActivity.class);
+            startActivity(intent);
+        }
+        else if(id==R.id.menuitem_setence)
+        {
+            Intent intent=new Intent(this,SetencesComplitingActivity.class);
             startActivity(intent);
         }
 

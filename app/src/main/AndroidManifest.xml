@@ -22,6 +22,12 @@
         <activity android:name=".LearningActivity">
 
         </activity>
+        <activity android:name=".AmericanTestActivity">
+
+        </activity>
+        <activity android:name=".SetencesComplitingActivity">
+
+        </activity>
     </application>
 
 </manifest>
