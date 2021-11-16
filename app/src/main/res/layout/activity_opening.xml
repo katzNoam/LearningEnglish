@@ -9,16 +9,15 @@
    >
 
 
-
     <TextView
         android:id="@+id/hello"
-        android:layout_width="269dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="334dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="76dp"
         android:text=""
         android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.974"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
