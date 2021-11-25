@@ -42,8 +42,10 @@ public class Tests extends Words
         String s= super.toString()+ ", Amount of tested words:"+this.countTestedWords+", Options: [";
         for(int i=0;i<listOfOptions.length-1;i++)
         {
-
+            s=s+this.listOfOptions[i]+", ";
         }
+        s=s+this.listOfOptions[listOfOptions.length-1]+"]";
+        return s;
     }
 
     public String getOptionByIndex(int i)

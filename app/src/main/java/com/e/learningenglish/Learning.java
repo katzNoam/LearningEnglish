@@ -2,28 +2,28 @@ package com.e.learningenglish;
 
 public class Learning extends Words
 {
-    private int countLearndWords;
+    private int countLearnedWords;
 
     public Learning(String[] englishWord,String[] hebrewWords)
     {
         super(englishWord, hebrewWords);
-        this.countLearndWords=0;
+        this.countLearnedWords=0;
     }
 
     public int getCountLearndWords()
     {
-        return this.countLearndWords;
+        return this.countLearnedWords;
     }
 
-    public void setCountLearndWords(int countLearndWords)
+    public void setCountLearndWords(int countLearnedWords)
     {
-        this.countLearndWords = countLearndWords;
+        this.countLearnedWords = countLearnedWords;
     }
 
     @Override
     public String toString()
     {
-        return super.toString()+ ", Amount of learned words:"+this.countLearndWords;
+        return super.toString()+ ", Amount of learned words:"+this.countLearnedWords;
     }
 
 

@@ -28,6 +28,17 @@ public class SetencesCompliting extends Tests
     @Override
     public String toString()
     {
-        return super.toString();
+        String s = super.toString()+"List of setences:";
+        for(int i=0;i<listOfSetences.length-1;i++)
+        {
+            s=s+this.listOfSetences[i]+", ";
+        }
+        s=s+this.listOfSetences[listOfSetences.length-1]+"]";
+        return s;
+    }
+
+    public String getSetenceByIndex(int i)
+    {
+        return this.listOfSetences[i];
     }
 }
