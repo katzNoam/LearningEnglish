@@ -39,7 +39,11 @@ public class Tests extends Words
     @Override
     public String toString()
     {
-        return super.toString()+ ", Amount of tested words:"+this.countTestedWords;
+        String s= super.toString()+ ", Amount of tested words:"+this.countTestedWords+", Options: [";
+        for(int i=0;i<listOfOptions.length-1;i++)
+        {
+
+        }
     }
 
     public String getOptionByIndex(int i)
