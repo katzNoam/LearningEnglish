@@ -13,7 +13,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 Button register;
 Dialog register_dialog;
-Button connect;
+Button log_in;
 EditText name;
 EditText password;
 
@@ -26,8 +26,8 @@ EditText password;
         password=findViewById(R.id.password);
         register=findViewById(R.id.register);
         register.setOnClickListener(this);
-        connect=(Button)findViewById(R.id.log_in);
-        connect.setOnClickListener(this);
+        log_in=(Button)findViewById(R.id.log_in);
+        log_in.setOnClickListener(this);
     }
 
 
@@ -41,7 +41,7 @@ EditText password;
             register_dialog.setContentView(R.layout.dialog_register);
             register_dialog.show();
         }
-        if (connect==v)
+        if (log_in ==v)
         {
             Intent intent=new Intent(this,OpeningActivity.class);
             intent.putExtra("hello2",name.getText().toString());
