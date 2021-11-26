@@ -7,7 +7,7 @@
     android:background="@drawable/back3">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/word_learn"
         android:layout_width="336dp"
         android:layout_height="137dp"
         android:layout_marginTop="112dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/translation"
         android:layout_width="315dp"
         android:layout_height="102dp"
         android:layout_marginTop="300dp"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/next_word"
         android:layout_width="224dp"
         android:layout_height="80dp"
         android:layout_marginTop="556dp"

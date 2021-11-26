@@ -7,7 +7,7 @@
     android:background="@drawable/back3">
 
     <Button
-        android:id="@+id/voice_btn"
+        android:id="@+id/voice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="156dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/option3_american"
         android:layout_width="122dp"
         android:layout_height="77dp"
         android:layout_marginTop="548dp"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/option2_american"
         android:layout_width="122dp"
         android:layout_height="77dp"
         android:layout_marginTop="460dp"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/option1_american"
         android:layout_width="122dp"
         android:layout_height="77dp"
         android:layout_marginTop="460dp"
@@ -55,7 +55,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/option4_american"
         android:layout_width="122dp"
         android:layout_height="77dp"
         android:layout_marginTop="548dp"
@@ -67,7 +67,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/word_american"
         android:layout_width="120dp"
         android:layout_height="59dp"
         android:layout_marginTop="156dp"
