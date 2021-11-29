@@ -7,39 +7,38 @@
     android:background="@drawable/back3">
 
     <TextView
-        android:id="@+id/word_learn"
-        android:layout_width="336dp"
-        android:layout_height="137dp"
-        android:layout_marginTop="112dp"
-        android:text="word(english)"
-        android:textSize="50dp"
+        android:id="@+id/learning_word"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="96dp"
+        android:text="word"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.807"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/translation"
-        android:layout_width="315dp"
-        android:layout_height="102dp"
-        android:layout_marginTop="300dp"
+        android:id="@+id/learning_translation"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="232dp"
         android:text="translation"
-        android:textSize="50dp"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/next_word"
-        android:layout_width="224dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="556dp"
-        android:text="מלה הבאה"
-        android:textSize="30dp"
+        android:layout_width="174dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="572dp"
+        android:text="next word"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
