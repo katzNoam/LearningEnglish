@@ -1,31 +1,24 @@
 package com.e.learningenglish;
 
-import java.util.Arrays;
-
 public class Words
 {
-    protected String[] englishWords;
-    protected String[] hebrewWords;
+    protected Word[] words;
+
     protected int countWords;
 
-    public Words(String[] englishWord,String[] hebrewWords)
+    public Words(Word[] words)
     {
-        for(int i=0;i< englishWord.length;i++)
+        for(int i=0;i< words.length;i++)
         {
-            this.englishWords[i]=englishWord[i];
-            this.hebrewWords[i]=hebrewWords[i];
+            this.words[i]=words[i];
+
         }
-        this.countWords=englishWord.length;
+        this.countWords=words.length;
     }
 
-    public String [] getEnglishWords()
+    public Word [] getWords()
     {
-        return this.englishWords;
-    }
-
-    public String [] getHebrewWords()
-    {
-        return this.hebrewWords;
+        return this.words;
     }
 
     public int getCountWords()
@@ -33,14 +26,9 @@ public class Words
         return this.countWords;
     }
 
-    public void setEnglishWords(String[] englishWords)
+    public void setWords(Word[] words)
     {
-        this.englishWords = englishWords;
-    }
-
-    public void setHebrewWords(String[] hebrewWords)
-    {
-        this.hebrewWords = hebrewWords;
+        this.words = words;
     }
 
     public void setCountWords(int countWords)
@@ -51,48 +39,33 @@ public class Words
     @Override
     public String toString()
     {
-        String s="English words:[";
+        String s="Words:[";
         for(int j=0;j<this.countWords-1;j++)
         {
-            s=s+this.englishWords[j];
+            s=s+this.words[j];
         }
-        s=s+this.englishWords[this.countWords-1]+"], Hebrew words:[";
-        for(int i=0;i<this.countWords-1;i++)
-        {
-            s=s+this.hebrewWords[i];
-        }
-        s=s+this.hebrewWords[this.countWords-1]+"], Amount of words:"+this.countWords;
+        s=s+this.words[this.countWords-1]+"]";
         return s;
     }
 
-    public String getEnglishWordByIndex(int i)
+    public Word getWordByIndex(int i)
     {
-        return this.englishWords[i];
+        return this.words[i];
     }
 
-    public String getHebrewWordByIndex(int i)
+    public void addingWord(Word word)
     {
-        return this.hebrewWords[i];
-    }
-
-    public void addingWord(String englishWord, String hebrewWord)
-    {
-        String [] tempEnglishWord = new String[this.countWords];
-        String [] tempHebrewWord = new String[this.countWords];
+        Word [] tempWord = new Word[this.countWords];
         for(int i=0;i<this.countWords;i++)
         {
-            tempEnglishWord[i]=this.englishWords[i];
-            tempHebrewWord[i]=this.hebrewWords[i];
+            tempWord[i]=this.words[i];
         }
         this.countWords++;
-        this.englishWords = new String[this.countWords];
-        this.hebrewWords = new String[this.countWords];
+        this.words = new Word[this.countWords];
         for(int j=0;j<this.countWords-1;j++)
         {
-            this.englishWords[j]=tempEnglishWord[j];
-            this.hebrewWords[j]=tempHebrewWord[j];
+            this.words[j]=tempWord[j];
         }
-        this.englishWords[this.countWords-1]=englishWord;
-        this.hebrewWords[this.countWords-1]=hebrewWord;
+        this.words[this.countWords-1]=word;
     }
 }

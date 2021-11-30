@@ -3,12 +3,11 @@ package com.e.learningenglish;
 public class Tests extends Words
 {
     protected int countTestedWords;
-
     protected String[] listOfOptions;
 
-    public Tests(String[] englishWord, String[] hebrewWords, String[] listOfOptions)
+    public Tests(Word[] words, String[] listOfOptions)
     {
-        super(englishWord, hebrewWords);
+        super(words);
         this.countTestedWords=0;
         for(int i=0;i< listOfOptions.length;i++)
         {
