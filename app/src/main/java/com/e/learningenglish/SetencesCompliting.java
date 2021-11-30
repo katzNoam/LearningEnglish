@@ -6,9 +6,9 @@ public class SetencesCompliting extends Tests
 {
     private String[] listOfSetences;
 
-    public SetencesCompliting(String[] englishWord, String[] hebrewWords, String[] listOfOptions, String[] listOfSetences)
+    public SetencesCompliting(Word[] words, String[] listOfOptions, String[] listOfSetences)
     {
-        super(englishWord, hebrewWords, listOfOptions);
+        super(words, listOfOptions);
         for(int i=0;i<listOfSetences.length;i++)
         {
             this.listOfSetences[i]=listOfSetences[i];
