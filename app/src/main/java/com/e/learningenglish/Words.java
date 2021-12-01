@@ -42,9 +42,9 @@ public class Words
         String s="Words:[";
         for(int j=0;j<this.countWords-1;j++)
         {
-            s=s+this.words[j];
+            s=s+this.words[j].toString();
         }
-        s=s+this.words[this.countWords-1]+"]";
+        s=s+this.words[this.countWords-1].toString()+"]";
         return s;
     }
 
