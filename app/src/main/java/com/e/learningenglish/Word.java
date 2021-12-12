@@ -66,7 +66,15 @@ public class Word
 
     public String toString()
     {
-        return "Word="+this.word+", translation="+this.translation;
+        String s="Word="+this.word+", translation="+this.translation+", level="+this.level+", times learned="+this.countTimesOfLearning;
+        switch (this.typeOfTest)
+        {
+            case 1:s=s+", type of test:american test";
+                    break;
+            default: s=s+"type of test:compliting setences";
+                    break;
+        }
+        return s;
     }
 
 
