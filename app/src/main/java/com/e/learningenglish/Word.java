@@ -4,6 +4,7 @@ public class Word
 {
     private String word;
     private String translation;
+    private int level;// 
 
     public Word(String word, String translation)
     {

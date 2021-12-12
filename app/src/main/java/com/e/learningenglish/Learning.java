@@ -4,9 +4,9 @@ public class Learning extends Words
 {
     private int countLearnedWords;
 
-    public Learning(String[] englishWord,String[] hebrewWords)
+    public Learning(Word[] words)
     {
-        super(englishWord, hebrewWords);
+        super(words);
         this.countLearnedWords=0;
     }
 
