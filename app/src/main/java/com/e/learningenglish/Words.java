@@ -8,6 +8,7 @@ public class Words
 
     public Words(Word[] words)
     {
+        this.words= new Word[words.length];
         for(int i=0;i< words.length;i++)
         {
             this.words[i]=words[i];
