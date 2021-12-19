@@ -41,7 +41,7 @@ public class RegisterDialog extends AppCompatActivity implements View.OnClickLis
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = auth.getCurrentUser();
-//        updateUI(currentUser);
+     //  updateUI(currentUser);
     }
 
     @Override
@@ -52,14 +52,21 @@ public class RegisterDialog extends AppCompatActivity implements View.OnClickLis
             if(!password.getText().toString().equals(confirm_password.getText().toString()))
             {
                 Toast.makeText(this, "problem at your password",Toast.LENGTH_LONG).show();
-            } else {
+            }
+            else
+            {
                 auth.createUserWithEmailAndPassword(email.getText() + "", password.getText() + "")
-                        .addOnCompleteListener(RegisterDialog.this, new OnCompleteListener<AuthResult>() {
+                        .addOnCompleteListener(RegisterDialog.this, new OnCompleteListener<AuthResult>()
+                {
                     @Override
-                    public void onComplete(Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
+                    public void onComplete(Task<AuthResult> task)
+                    {
+                        if (task.isSuccessful())
+                        {
                             Toast.makeText(RegisterDialog.this, "Successfully registered", Toast.LENGTH_LONG).show();
-                        } else {
+                        }
+                        else
+                        {
                             Toast.makeText(RegisterDialog.this, "Registration Error", Toast.LENGTH_LONG).show();
                         }
                     }
