@@ -1,5 +1,6 @@
 package com.e.learningenglish;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
@@ -73,13 +74,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } else {
 
                 auth.createUserWithEmailAndPassword(register_email.getText().toString(), register_password.getText().toString())
-                        .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
+                        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                             @Override
-                            public void onComplete(Task<AuthResult> task) {
+                            public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     Toast.makeText(MainActivity.this, "Successfully registered", Toast.LENGTH_LONG).show();
+                                    User user = new User(register_name.toString(),register_password.toString(),register_email.toString());
                                 } else {
-                                    Toast.makeText(MainActivity.this, "Registration Error", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(MainActivity.this, "Registration Error"+task.getException(), Toast.LENGTH_LONG).show();
                                 }
                             }
                         });
